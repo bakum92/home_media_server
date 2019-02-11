@@ -11,7 +11,15 @@
     <link rel="stylesheet" type="text/css" href="img/engine1/style.css" />
     <script type="text/javascript" src="img/engine1/jquery.js"></script>
     <!-- End WOWSlider.com HEAD section -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
     <title>Домашний медиа-сервер</title>
+    <link rel="stylesheet" href="style/bootstrap.min.css" type="text/css">
+
 </head>
 
 <body>
@@ -86,16 +94,71 @@
     </p>
     <small>Программа бесплатная и поставляется по принципу "AS IS" - никаких гарантий не прилагается и не предусматривается.</small>
     <p><a href="https://www.dropbox.com/sh/8k5e0rku7u8kvv6/AADTuyz-NrEI00XpGtFKs_Mea?dl=0" target="_blank">Скачать</a></p>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-4">
+                <form action="php/telegram.php" method="POST">
+                    <legend>Заголовок формы</legend>
+
+                    <div class="form-group">
+                        <label for="">Введите ваше имя</label>
+                        <input type="text" class="form-control" id="" name="user_name" placeholder="Например, Иван">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Введите номер телефона</label>
+                        <input type="text" class="form-control" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Введите email</label>
+                        <input type="text" class="form-control" id="" name="user_email" placeholder="mail@mail.ru">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Отправить форму</button>
+                </form>
+            </div><!-- .col-sm-4 -->
+        </div> <!-- .row -->
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
     <!-- BEGIN JIVOSITE CODE {literal} -->
-<script type='text/javascript'>
-(function(){ var widget_id = 'S7k6gEI0ad';var d=document;var w=window;function l(){
-  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
-  s.src = '//code.jivosite.com/script/widget/'+widget_id
-    ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
-  if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
-  else{w.addEventListener('load',l,false);}}})();
-</script>
-<!-- {/literal} END JIVOSITE CODE -->
+    <script type='text/javascript'>
+        (function() {
+            var widget_id = 'S7k6gEI0ad';
+            var d = document;
+            var w = window;
+
+            function l() {
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = '//code.jivosite.com/script/widget/' + widget_id;
+                var ss = document.getElementsByTagName('script')[0];
+                ss.parentNode.insertBefore(s, ss);
+            }
+            if (d.readyState == 'complete') {
+                l();
+            } else {
+                if (w.attachEvent) {
+                    w.attachEvent('onload', l);
+                } else {
+                    w.addEventListener('load', l, false);
+                }
+            }
+        })();
+
+    </script>
+    <!-- {/literal} END JIVOSITE CODE -->
 </body>
 
 </html>
